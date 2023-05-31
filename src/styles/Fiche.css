@@ -1,0 +1,125 @@
+.bloc-images 
+{
+    display: flex;
+    justify-content:center;
+}
+
+.Images
+{
+    height: 415px;
+    width: 1240px;
+    border-radius: 25px;
+}
+
+.photo-profil
+{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 64px;
+    width: 64px;
+}
+
+.tags
+{
+    background: #FF6060;
+    border-radius: 10px;
+    margin: 2%;
+    color: #fff;
+}
+
+.titre
+{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.titre2
+{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
+
+.name
+{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    width:50%;
+}
+
+.bloc-location-loueur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.bloc-location
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.bloc-loueur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+
+
+.description-equipements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.des-equi
+{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3%;
+    margin-top: 0;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #F7F7F7;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.equipements
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+
+.desequi-p
+{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FF6060;
+    margin-left: 3%;
+}

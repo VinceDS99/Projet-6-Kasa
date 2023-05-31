@@ -1,0 +1,69 @@
+.paysage2
+{
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 171px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-left: 4%;
+    filter: brightness(0.6);
+}
+
+.apropos
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Fiabilite,.Securite,.Service,.Respect
+{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.titre
+{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: left;
+    width: 10%;
+}
+
+.chevron
+{
+    background-color: #FF6060;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.fa-chevron-up, .fa-chevron-down
+{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    width: 10%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+
+.fa-chevron-up, .fa-chevron-down:hover
+{
+    cursor: pointer;
+}
+
+.fa-chevron-up
+{
+    display: none;
+}
+
