@@ -19,7 +19,15 @@ body
 
 .img-paysage
 {
-    position: relative;
+    background-image: url(../assets/Paysage.png);
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 171px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-left: 4%;
+    filter: brightness(0.6);
 }
 
 .paysage-text
@@ -27,9 +35,9 @@ body
     text-align:center;
     margin-top:-9%;
     margin-left: 50%;
-    position: absolute;
     color: red;
-    z-index: 10;
+    text-decoration: none;
+    position: absolute;
 }
 
 .loc
@@ -72,6 +80,7 @@ body
     margin-right: 30%;
     position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    text-decoration: none;
 
 }
 

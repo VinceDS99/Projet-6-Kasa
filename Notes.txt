@@ -1,0 +1,6 @@
+1-En .jsx ?
+2- Texte disparait ?
+3- Count et if
+
+
+tags.length ? for etoile ?

@@ -10,7 +10,6 @@ function Locations() {
 	return (
         <div>
             <div className='img-paysage'>
-                <img src={Paysage} alt="Paysage en bord de mer" className='paysage'/>
                 <span className='paysage-text'>Chez vous, partout et ailleurs</span>
             </div>
             

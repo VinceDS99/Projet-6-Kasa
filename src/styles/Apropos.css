@@ -1,4 +1,4 @@
-.paysage2
+.Montagne
 {
     width: 1240px;
     height: 223px;
@@ -16,13 +16,14 @@
     flex-direction: column;
 }
 
-.Fiabilite,.Securite,.Service,.Respect
+.Title
 {
     display: flex;
     width: 95%;
     justify-content: center;
     margin-top: 3%;
     margin-left: 2%;
+    flex-direction: column;
 }
 
 .titre
@@ -46,7 +47,7 @@
     justify-content: space-between;
 }
 
-.fa-chevron-up, .fa-chevron-down
+.fa-chevron-down, .fa-chevron-up
 {
     display: flex;
     justify-content: flex-end;
@@ -56,13 +57,21 @@
     margin-top: 2%;
 }
 
-
 .fa-chevron-up, .fa-chevron-down:hover
 {
     cursor: pointer;
 }
 
-.fa-chevron-up
+.textActif
+{
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+    border-radius: 5px;
+    color: #FF6060;
+}
+
+.textInactif
 {
     display: none;
 }

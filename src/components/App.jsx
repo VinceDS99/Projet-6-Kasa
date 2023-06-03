@@ -6,7 +6,8 @@ import Error from './Error'
 import Apropos from './Apropos'
 import {Routes, Route} from "react-router-dom"
 
-function App() {
+function App() 
+{
     return (
 		<div>
 			<Header/>
