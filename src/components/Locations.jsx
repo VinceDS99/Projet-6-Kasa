@@ -1,5 +1,4 @@
 import { locationsList } from '../datas/Annonces'
-import Paysage from '../assets/Paysage.png'
 import '../styles/Locations.css'
 import {Link} from "react-router-dom"
 

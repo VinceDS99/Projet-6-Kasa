@@ -1,6 +1,10 @@
-1-En .jsx ?
-2- Texte disparait ?
-3- Count et if
+1- Erreur en cas de mauvais id -> etape 9
 
+2- Composant collaps et page a propos
 
-tags.length ? for etoile ?
+3- page location :
+		- Comosant tags
+		- Collapse
+		- Composant stars
+
+id collapqse

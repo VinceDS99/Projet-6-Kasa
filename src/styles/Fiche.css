@@ -19,28 +19,14 @@
     width: 64px;
 }
 
-.tags
-{
-    background: #FF6060;
-    border-radius: 10px;
-    margin: 2%;
-    color: #fff;
-}
-
-.titre
-{
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 36px;
-    color: #FF6060;
-}
-
 .titre2
 {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 18px;
     color: #FF6060;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .name
@@ -71,9 +57,12 @@
 .bloc-loueur
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     margin-right: 5%;
+    height: 15%;
+    margin-top: 2%;
+
 }
 
 
@@ -123,3 +112,83 @@ section
     color: #FF6060;
     margin-left: 3%;
 }
+
+.loueur
+{
+    display: flex ;
+    flex-direction: row;
+}
+
+/**Collapse**/
+
+.fa-chevron-up, .fa-chevron-down:hover
+{
+    cursor: pointer;
+}
+
+.textActif
+{
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+    border-radius: 5px;
+    color: #FF6060;
+}
+
+.textInactif
+{
+    display: none;
+}
+.chevron
+{
+    background-color: #FF6060;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.fa-chevron-down, .fa-chevron-up
+{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    width: 10%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.Title
+{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 2%;
+    flex-direction: column;
+    height: 30%;
+}
+
+
+
+.titreCollapse
+{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: left;
+    width: 10%;
+}
+.titre
+{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    margin-bottom: 10%;
+}
+
+
+/**Collapse**/

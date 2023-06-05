@@ -25,10 +25,10 @@ export default function Collapse(props)
 
         return  <div className='Title'>
                     <div className='chevron'>
-                                <h1 className='titre'>{props.titre}</h1>
+                                <h1 className='titreCollapse'>{props.titre}</h1>
                                 <i class="fa-solid fa-chevron-down" id={ChevronID} onClick={() => Click()}></i>
                     </div>
-                        <p className='textInactif' id={props.id}>{props.description}</p>
+                            <p className='textInactif' id={props.id}>{props.description}</p>
                 </div>
 }
 

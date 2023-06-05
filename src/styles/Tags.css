@@ -1,0 +1,21 @@
+.divTags
+{
+    background-color: red;
+}
+
+.tags
+{
+    background: #FF6060;
+    border-radius: 10px;
+    margin: 2%;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.Bloc-Tags
+{
+    display: flex;
+}
