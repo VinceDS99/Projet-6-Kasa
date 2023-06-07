@@ -7,7 +7,6 @@ export default function NavigationError()
 {
         const params = useParams()
 
-
         const found = locationsList.find(element => element.id === params.id);
 
         if (found == undefined) 

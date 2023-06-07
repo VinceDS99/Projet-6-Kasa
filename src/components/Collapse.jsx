@@ -2,25 +2,76 @@ import React from "react"
 
 export default function Collapse(props) 
 {
-    const ID = props.id
+
     const ChevronID = props.titre + props.id
+
+    var tab = [0]
+    tab.push(props.description)
+
+
+    var tableau  = []
+
+    if (props.titre == 'Equipements') 
+    {
+        for (var i = 0; i < tab[1].length;i++) 
+        {            
+            tableau.push(tab[1][i])
+        }
+    }
+
+    else
+    {
+        tableau.push(tab[1])
+    }
+
+    var ID = props.id + props.titre
+
 
     function Click()
     {
-        const text = document.querySelector('#' + ID)
-        const chev = document.querySelector('#' + ChevronID)
-
-        if (text.className == 'textInactif') 
+        if (props.titre == 'Equipements')
         {
-            text.className = 'textActif'
-            chev.className = 'fa-solid fa-chevron-up'
+            const textEquipements = document.querySelectorAll('#' + ID)
+            const chev = document.querySelector('#' + ChevronID)
+    
+            for (var i = 0; i < tableau.length; i++)
+            {
+                if (textEquipements[i].className == 'textInactif') 
+                {
+                    textEquipements[i].className = 'textActif'
+                    chev.className = 'fa-solid fa-chevron-up'
+
+                    console.log('oui')
+                }
+        
+                else if (textEquipements[i].className == 'textActif')
+                {
+                    textEquipements[i].className = 'textInactif'
+                    chev.className = 'fa-solid fa-chevron-down'  
+                    console.log('non')
+                }
+            }
+
+        }
+        else
+        {
+            const textAutres = document.querySelector('#' + ID)
+            const chev = document.querySelector('#' + ChevronID)
+            console.log(textAutres)
+    
+            if (textAutres.className == 'textInactif') 
+            {
+                textAutres.className = 'textActif'
+                chev.className = 'fa-solid fa-chevron-up'
+            }
+    
+            else if (textAutres.className == 'textActif')
+            {
+                textAutres.className = 'textInactif'
+                chev.className = 'fa-solid fa-chevron-down'  
+            }
         }
 
-        else if (text.className == 'textActif')
-        {
-            text.className = 'textInactif'
-            chev.className = 'fa-solid fa-chevron-down'            
-        }
     }
 
         return  <div className='Title'>
@@ -28,7 +79,14 @@ export default function Collapse(props)
                                 <h1 className='titreCollapse'>{props.titre}</h1>
                                 <i class="fa-solid fa-chevron-down" id={ChevronID} onClick={() => Click()}></i>
                     </div>
-                            <p className='textInactif' id={props.id}>{props.description}</p>
+                    <div className='description-collapse'>
+                        {tableau.map
+                            (tab =>
+                                <p className="textInactif" id={ID} >{tab}</p>                    
+                            )
+                        }
+                    </div>
+
                 </div>
 }
 

@@ -133,6 +133,7 @@ section
     background: #F7F7F7;
     border-radius: 5px;
     color: #FF6060;
+    margin-bottom: 0;
 }
 
 .textInactif
@@ -145,6 +146,7 @@ section
     display: flex;
     width: 95%;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .fa-chevron-down, .fa-chevron-up
@@ -179,7 +181,6 @@ section
     padding-left: 1%;
     display: flex;
     justify-content: left;
-    width: 10%;
 }
 .titre
 {
@@ -190,5 +191,77 @@ section
     margin-bottom: 10%;
 }
 
+.description-collapse
+{
+    background-color: #F7F7F7;
+    width: inherit;
+}
+
 
 /**Collapse**/
+
+
+@media screen and (max-width: 767px)
+{
+    .Images
+    {
+        width: 95%;
+    }
+
+    .bloc-location-loueur
+    {
+        flex-direction: column;
+    }
+
+    .titre
+    {
+        font-size: 18px;
+        line-height:26px;
+        justify-content: flex-start;
+        margin-left: 2%;
+    }
+    .titre2
+    {
+        margin-left: 2%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .tags
+    {
+        font-size: 14px;
+        height: 32px;
+    }
+    
+    .bloc-loueur
+    {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .loueur
+    {
+        justify-content: flex-end;
+    }
+
+    .star
+    {
+        margin-top: 10%;
+    }
+
+    .description-equipements
+    {
+        flex-direction: column;
+    }
+
+    .chevron
+    {
+        height: 30px;
+    }
+
+    .titreCollapse
+    {
+        font-size: 12px;
+    }
+
+}

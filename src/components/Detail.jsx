@@ -4,7 +4,6 @@ import Stars from './Stars.jsx';
 import { useParams } from "react-router-dom"
 import { locationsList } from '../datas/Annonces'
 import '../styles/Fiche.css'
-import { Navigate } from 'react-router-dom';
 
 export default function Detail() 
 {

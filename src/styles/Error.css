@@ -41,3 +41,23 @@ h4
     text-decoration-line: underline;
     color: #FF6060;
 }
+
+@media screen and (max-width: 767px)
+{
+    .Error
+    {
+        width: 75%;
+        margin-left:20%;
+    }
+
+    h1{
+        font-size:96px;
+    }
+
+    h2
+    {
+        font-size: 18px;
+        margin-left: 10%;
+        margin-bottom: 50%;
+    }
+}

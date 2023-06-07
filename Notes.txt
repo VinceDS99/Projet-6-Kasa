@@ -7,4 +7,7 @@
 		- Collapse
 		- Composant stars
 
-id collapqse
+4- responsive
+
+texte et image ?
+a propos sur une ligne ?

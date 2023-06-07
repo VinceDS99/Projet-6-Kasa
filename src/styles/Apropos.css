@@ -62,7 +62,6 @@
     width: inherit;
     padding-top: 1%;
     padding-left: 2px;
-    padding-bottom: 1%;
 }
 
 .textInactif
@@ -70,3 +69,14 @@
     display: none;
 }
 
+
+@media screen and (max-width: 767px)
+{
+.Montagne
+{
+    width: 95%;
+}
+
+
+
+}

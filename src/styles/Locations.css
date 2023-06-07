@@ -97,3 +97,44 @@ body
     border-radius: 10px;
 }
 
+@media screen and (max-width: 767px)
+{
+    body
+    {
+        width: 100%;
+    }
+
+    .header-bloc
+    {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .LogoKasa
+    {
+        width:30%
+    }
+
+    .nav-text
+    {
+        font-size:12px;
+    }
+
+    .img-paysage
+    {
+        width: 95%;
+    }
+
+    .loc
+    {
+        flex-direction: column;
+    }
+
+    .loc-item
+    {
+        width: 95%;
+    }
+
+
+
+}
