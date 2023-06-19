@@ -1,6 +1,6 @@
 import '../styles/Apropos.css'
 import Montagne from '../assets/Montagne.png'
-import Collapse from './Collapse.jsx'
+import Collapse from '../components/Collapse.jsx'
 
 export default function Apropos() 
 {

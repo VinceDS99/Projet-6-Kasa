@@ -1,0 +1,90 @@
+.fa-chevron-right, .fa-chevron-left
+{
+    cursor: pointer;
+    width: 45px;
+    height: 80px;
+    font-size: 45px;
+    color: #fff;
+    display: flex;
+}
+
+#imageCarousel 
+{
+    width: 95%;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.Bloc-Image
+{
+    display : flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Bloc-Fleches
+{
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    width: 80%;
+}
+
+.Bloc-Numeros
+{
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+    color: white;
+    font-weight: bold;
+}
+
+/* span
+{
+    position: absolute;
+} */
+
+.fa-chevron-right
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+.fa-chevron-left
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.invisiArrox
+{
+    display: none;
+}
+
+@media screen and (max-width: 767px)
+{
+.Bloc-Numeros
+{
+    display: none;
+}
+
+#imageCarousel 
+{
+    height: 255px;
+}
+
+.fa-chevron-left, .fa-chevron-right
+{
+    margin-top: 10%;
+}
+}
+
+@media screen and (max-width: 1000px)
+{
+.Bloc-Numeros
+{
+    display: none;
+}
+}

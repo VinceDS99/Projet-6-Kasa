@@ -1,18 +1,10 @@
 import { locationsList } from '../datas/Annonces'
-import '../styles/Locations.css'
+import '../styles/Accueil.css'
 import {Link} from "react-router-dom"
 
-function Locations() {
-
-
-
-	return (
-        <div>
-            <div className='img-paysage'>
-                <span className='paysage-text'>Chez vous, partout et ailleurs</span>
-            </div>
-            
-            <div className='loc' id='accueil'>
+export default function Card() 
+{
+	return <div className='loc' id='accueil'>
                     {locationsList.map((loc) => 
                         (
                             <div className='loc-item'>
@@ -24,8 +16,5 @@ function Locations() {
                         ))
                     }
             </div>
-        </div>
-	)
-}
 
-export default Locations
+}

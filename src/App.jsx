@@ -1,18 +1,18 @@
-import Header from './Header'
-import Locations from './Locations'
-import Fiche from './Fiche'
-import Footer from './Footer'
-import Error from './Error'
-import Apropos from './Apropos'
+import Header from './components/Banner'
+import Accueil from './pages/Accueil'
+import Fiche from './pages/Fiche'
+import Footer from './components/Footer'
+import Error from './pages/Error'
+import Apropos from './pages/Apropos'
 import {Routes, Route} from "react-router-dom"
 
 function App() 
 {
     return (
-		<div>
+		<div className="AppDiv">
 			<Header/>
 			<Routes>
-				<Route path="/" element={<Locations/>} />
+				<Route path="/" element={<Accueil/>} />
 				<Route path="/Fiche/:id" element={<Fiche/>} />
 				<Route path="/A-propos" element={<Apropos/>} />
 				<Route path="/*" element={<Error/>} />

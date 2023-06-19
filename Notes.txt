@@ -1,13 +1,5 @@
-1- Erreur en cas de mauvais id -> etape 9
+//////////////////////
 
-2- Composant collaps et page a propos
+enlever chevron derniere immeuble
 
-3- page location :
-		- Comosant tags
-		- Collapse
-		- Composant stars
-
-4- responsive
-
-texte et image ?
-a propos sur une ligne ?
+montserra html**********

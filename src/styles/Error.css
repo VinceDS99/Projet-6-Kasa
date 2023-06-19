@@ -21,7 +21,7 @@ h2
 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 36px;
     line-height: 142.6%;
     display: flex;
@@ -33,7 +33,7 @@ h2
 h4
 {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     line-height: 142.6%;
     display: flex;
@@ -47,7 +47,7 @@ h4
     .Error
     {
         width: 75%;
-        margin-left:20%;
+        margin-left:15%;
     }
 
     h1{
@@ -58,6 +58,6 @@ h4
     {
         font-size: 18px;
         margin-left: 10%;
-        margin-bottom: 50%;
+        margin-bottom: 30%;
     }
 }

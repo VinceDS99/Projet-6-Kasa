@@ -22,7 +22,7 @@
 .titre2
 {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     color: #FF6060;
     display: flex;
@@ -32,7 +32,7 @@
 .name
 {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     color: #FF6060;
     width:50%;
@@ -175,7 +175,7 @@ section
 {
     color: #fff;
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 24px;
     line-height: 142.6%;
     padding-left: 1%;
@@ -185,7 +185,7 @@ section
 .titre
 {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: bold;
     font-size: 36px;
     color: #FF6060;
     margin-bottom: 10%;
@@ -203,6 +203,11 @@ section
 
 @media screen and (max-width: 767px)
 {
+    body
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .Images
     {
         width: 95%;
@@ -219,39 +224,53 @@ section
         line-height:26px;
         justify-content: flex-start;
         margin-left: 2%;
+        height: 36px;
+        margin-bottom: 3%;
     }
     .titre2
     {
+        margin-top: 1%;
         margin-left: 2%;
         font-size: 14px;
         line-height: 20px;
+        margin-bottom: 1%;
     }
 
     .tags
     {
-        font-size: 14px;
-        height: 32px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 15px;
+        height: 18px;
+        width: 25%;
+        text-align: center;
     }
     
     .bloc-loueur
     {
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-top: 2%;
     }
 
     .loueur
     {
         justify-content: flex-end;
+        margin-right: 3%;
     }
 
     .star
     {
-        margin-top: 10%;
+        margin-top: 7%;
+        margin-left: 5%;
     }
 
     .description-equipements
     {
         flex-direction: column;
+        margin-right: 3%;
+        margin-left:3%;
+        width: 98%;
     }
 
     .chevron
@@ -262,6 +281,12 @@ section
     .titreCollapse
     {
         font-size: 12px;
+    }
+
+    .Bloc-Stars
+    {
+        display: flex;
+        gap: 7%;
     }
 
 }
