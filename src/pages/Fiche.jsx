@@ -11,7 +11,7 @@ export default function Fiche() {
 
 	return (
         
-    <div className='' >
+    <div className='' key={params.id}>
                 <Detail/>
                     {locationsList.filter(person => person.id === params.id).map(filteredPerson => 
                     (

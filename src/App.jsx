@@ -6,7 +6,7 @@ import Error from './pages/Error'
 import Apropos from './pages/Apropos'
 import {Routes, Route} from "react-router-dom"
 
-function App() 
+export default function App() 
 {
     return (
 		<div className="AppDiv">
@@ -22,4 +22,3 @@ function App()
 	)
 }
 
-export default App

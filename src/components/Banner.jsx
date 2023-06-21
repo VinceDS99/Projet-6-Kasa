@@ -2,7 +2,7 @@ import logo from '../assets/Logo.png'
 import '../styles/Banner.css'
 import {Link} from "react-router-dom"
 
-function Header() 
+export default function Header() 
 {
         return <header className="header">
 
@@ -17,4 +17,3 @@ function Header()
                 </header>
 }
 
-export default Header

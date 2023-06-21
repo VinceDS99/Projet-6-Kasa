@@ -22,25 +22,20 @@ export default function Slideshow()
         var taille = found.pictures.length
 
 
+        ////////////////////////////////
+        var left = document.querySelector('#arrowLeft')
+        var right = document.querySelector('#arrowRight')
 
+        console.log(left)
+        console.log(right)
 
-            var left = document.getElementById('arrows')
-            const right = document.querySelector('#arrowRight')
-            const iv = document.querySelector('i')
-
-            console.log(iv)
-            console.log(left)
-            console.log(right)
-
-            console.log('fonction length activé')
-            if ( taille == 1 )
-            {
-                console.log('1 image')
-
-            } 
-        
-
-
+        if ( taille == 1 && right != null && left != null)
+        {
+            console.log('Une seule image pour cette location')
+            left.className = ''
+            right.className = ''
+        } 
+        //////////////////////////////////
 
 
         var num = i + 1
@@ -66,7 +61,6 @@ export default function Slideshow()
         function getPicturePrev() 
         {            
             i  = i - 1
-
             if (i == -1)
             {
                 i = found.pictures.length - 1
@@ -92,5 +86,6 @@ export default function Slideshow()
                     <span id="numeroImage">{num}</span><span>/{taille}</span>
                 </div>
             </div> 
+            
 }
 

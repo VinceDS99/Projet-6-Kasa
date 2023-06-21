@@ -17,14 +17,13 @@ export default function Detail()
                         <Slideshow/>
                         
                         {locationsList.filter(person => person.id === params.id).map(filteredPerson => 
-                        
                         <div>
-                                <div className="bloc-location-loueur">
+                                <div className="bloc-location-loueur" >
                                         <div className='bloc-location' id='locab'>
-                                                <h1 key={filteredPerson.id} className='titre'>
+                                                <h1 className='titre'>
                                                 {filteredPerson.title}
                                                 </h1>
-                                                <h2 key={filteredPerson.id} className='titre2'>
+                                                <h2 className='titre2'>
                                                 {filteredPerson.location}
                                                 </h2>
                                                 <Tags/>
