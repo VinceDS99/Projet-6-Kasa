@@ -19,8 +19,8 @@ export default function Stars()
     return <div className="Bloc-Stars">
                 
                 {tabOrange.map
-                    (rate =>
-                        <i className={rate}></i>
+                    ((rate,index) =>
+                        <i className={rate} key={index}></i>
                     )
                 }
 

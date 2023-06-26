@@ -77,12 +77,12 @@ export default function Collapse(props)
         return  <div className='Title'>
                     <div className='chevron'>
                                 <h1 className='titreCollapse'>{props.titre}</h1>
-                                <i class="fa-solid fa-chevron-down" id={ChevronID} onClick={() => Click()}></i>
+                                <i className="fa-solid fa-chevron-down" id={ChevronID} onClick={() => Click()}></i>
                     </div>
                     <div className='description-collapse'>
                         {tableau.map
-                            (tab =>
-                                <p className="textInactif" id={ID} >{tab}</p>                    
+                            ((tab,index) =>
+                                <p className="textInactif" key={index} id={ID} >{tab}</p>                    
                             )
                         }
                     </div>

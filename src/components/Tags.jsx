@@ -10,8 +10,8 @@ export default function Tags()
         
     return <div className="Bloc-Tags">
                 {found.tags.map
-                    (tag =>
-                        <p className="tags">{tag}</p>                    
+                    ((tag,index) =>
+                        <p className="tags" key={index}>{tag}</p>                    
                     )
                 }
             </div> 

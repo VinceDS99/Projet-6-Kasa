@@ -16,8 +16,8 @@ export default function Detail()
 
                         <Slideshow/>
                         
-                        {locationsList.filter(person => person.id === params.id).map(filteredPerson => 
-                        <div>
+                        {locationsList.filter(person => person.id === params.id).map((filteredPerson,index) => 
+                        <div key={index}>
                                 <div className="bloc-location-loueur" >
                                         <div className='bloc-location' id='locab'>
                                                 <h1 className='titre'>

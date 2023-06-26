@@ -9,34 +9,7 @@ export default function Slideshow()
 
         var i = 0
 
-        if ( found == undefined )
-        {
-            return
-        }
-        else
-        {
-            var pictures = found.pictures[i]
-        }
-
-
         var taille = found.pictures.length
-
-
-        ////////////////////////////////
-        var left = document.querySelector('#arrowLeft')
-        var right = document.querySelector('#arrowRight')
-
-        console.log(left)
-        console.log(right)
-
-        if ( taille == 1 && right != null && left != null)
-        {
-            console.log('Une seule image pour cette location')
-            left.className = ''
-            right.className = ''
-        } 
-        //////////////////////////////////
-
 
         var num = i + 1
 
@@ -78,10 +51,14 @@ export default function Slideshow()
     return <div className="Bloc-Image">
                 <img src={pictures} alt="Logo de Kasa" className='LogoKasa' id="imageCarousel"/>
                 
-                <div className="Bloc-Fleches" id="arrows">
-                    <i class="fa-solid fa-chevron-left" id='arrowLeft' onClick={() => getPicturePrev()}></i>
-                    <i class="fa-solid fa-chevron-right" id='arrowRight' onClick={() => getPictureNext()}></i><br></br>
-                </div>
+                {taille > 1 && (
+                    <div className="Bloc-Fleches" id="arrows">
+                        <i className="fa-solid fa-chevron-left" id='arrowLeft' onClick={() => getPicturePrev()}></i>
+                        <i className="fa-solid fa-chevron-right" id='arrowRight' onClick={() => getPictureNext()}></i><br></br>
+                    </div>
+                    )
+                }
+
                 <div className="Bloc-Numeros">
                     <span id="numeroImage">{num}</span><span>/{taille}</span>
                 </div>

@@ -13,9 +13,9 @@ export default function Fiche() {
         
     <div className='' key={params.id}>
                 <Detail/>
-                    {locationsList.filter(person => person.id === params.id).map(filteredPerson => 
+                    {locationsList.filter(person => person.id === params.id).map((filteredPerson,index) => 
                     (
-                        <div>
+                        <div  key={index}>
                             <div>
                                 <div className='description-equipements'>
                                         <Collapse 
@@ -32,7 +32,8 @@ export default function Fiche() {
                                 </div>
                             </div>
                         </div>
-                    ))}                
+                    ))
+                    }                
 		</div>
 	)
 }    
