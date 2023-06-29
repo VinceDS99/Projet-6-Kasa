@@ -12,12 +12,14 @@ export default function Slideshow()
         var taille = found.pictures.length
 
         var num = i + 1
+        var pictures = found.pictures[i]
+
 
         function getPictureNext() 
         {            
             i  = i + 1
 
-            if (i == found.pictures.length)
+            if (i === found.pictures.length)
             {
                 i = 0
             }
@@ -34,7 +36,7 @@ export default function Slideshow()
         function getPicturePrev() 
         {            
             i  = i - 1
-            if (i == -1)
+            if (i === -1)
             {
                 i = found.pictures.length - 1
             }
