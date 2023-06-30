@@ -9,11 +9,14 @@ export default function Slideshow()
 
         var i = 0
 
-        var taille = found.pictures.length
+        if (found !== undefined) 
+        {
+            var pictures = found.pictures[i]
+
+            var taille = found.pictures.length        
+        }
 
         var num = i + 1
-        var pictures = found.pictures[i]
-
 
         function getPictureNext() 
         {            
@@ -24,7 +27,7 @@ export default function Slideshow()
                 i = 0
             }
 
-            pictures = found.pictures[i]
+            var pictures = found.pictures[i]
             const imgDiv = document.querySelector('#imageCarousel')
             imgDiv.src = pictures
 
@@ -41,7 +44,7 @@ export default function Slideshow()
                 i = found.pictures.length - 1
             }
 
-            pictures = found.pictures[i]
+            var pictures = found.pictures[i]
             const imgDiv = document.querySelector('#imageCarousel')
             imgDiv.src = pictures
 

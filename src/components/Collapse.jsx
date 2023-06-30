@@ -40,15 +40,12 @@ export default function Collapse(props)
                 {
                     textEquipements[i].className = 'textActif'
                     chev.className = 'fa-solid fa-chevron-up'
-
-                    console.log('oui')
                 }
         
                 else if (textEquipements[i].className == 'textActif')
                 {
                     textEquipements[i].className = 'textInactif'
                     chev.className = 'fa-solid fa-chevron-down'  
-                    console.log('non')
                 }
             }
 
@@ -57,7 +54,6 @@ export default function Collapse(props)
         {
             const textAutres = document.querySelector('#' + ID)
             const chev = document.querySelector('#' + ChevronID)
-            console.log(textAutres)
     
             if (textAutres.className == 'textInactif') 
             {
